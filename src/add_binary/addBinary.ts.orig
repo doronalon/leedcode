@@ -1,0 +1,13 @@
+/**
+ * @param {string} a
+ * @param {string} b
+ * @return {string}
+ */
+let addBinary = (a: string, b: string) : string => {
+    if(NaN === parseInt(a, 2) || NaN === parseInt(b,2)){
+        return undefined
+    }
+    return (parseInt(a, 2) + parseInt(b, 2)).toString(2)
+};
+
+console.info(addBinary("1010000010010011011","11010100101110111000111110011"))
